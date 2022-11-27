@@ -8,7 +8,9 @@
 <a href="https://black.readthedocs.io/en/stable/"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-black.svg?style=for-the-badge&labelColor=gray"></a>
 
 
+[![Conference](https://img.shields.io/badge/AAAI-2023-4b44ce.svg)](https://aaai.org/Conferences/AAAI-23/)
 </div>
+
 
 
 ## 📌&nbsp;&nbsp;Introduction
