@@ -49,24 +49,30 @@ Our directory structure looks like this:
 
 ```
 ├── project                 
-│   ├── module              <- Every modules are given in this directory
-│   │   ├── lrp_module      <- Modules to get LRP XAI are in this directory
-│   │   ├── models          <- Models
+│   ├── module                             <- Every modules are given in this directory
+│   │   ├── lrp_module                     <- Modules to get LRP XAI are in this directory
+│   │   ├── models                         <- Models
+│   │   ├── utils                          <- utilized
 │   │   ├── pl_classifier.py               <- basic classifier
-│   │   ├── pl_classifier_hessian.py       <- hessian regularization
-│   │   ├── pl_classifier_l2_cosd.py       <- l2 + cosd regularization
-│   │   └── utils           <- utilized
+│   │   ├── pl_hessian_classifier.py       <- hessian regularization
+│   │   ├── pl_l2_plus_cosd_classifier.py  <- l2 + cosd regularization
+│   │   ├── test_adv_insertion.py          <- run Adv-Insertion test
+│   │   ├── test_insertion.py              <- run Insertion test
+│   │   ├── test_rps.py                    <- run Random Perturbation Similarity test
+│   │   ├── test_taps_saps.py              <- run adversarial attack test
+│   │   └── test_upper_bouond.py           <- run upper bound test
 │   │
-│   ├── main.py             <- run train and test
-│   ├── test_insertion.py   <- run insertion test
-│   ├── test_rps.py         <- run Random Perturbation similarity test
-│   ├── test_upper_bouond.py   <- run upper bound test
-│   └── test_taps_saps.py   <- run adversarial attack test
+│   ├── main.py                            <- run train & test
+│   └── test_main.py                       <- run advanced test codes
+│   ├── test_insertion.py                  <- run insertion test
+│   ├── test_rps.py                        <- run Random Perturbation similarity test
+│   ├── test_upper_bouond.py               <- run upper bound test
+│   └── test_taps_saps.py                  <- run adversarial attack test
 │ 
-├── scripts                 <- Shell scripts
+├── scripts                                <- Shell scripts
 │
-├── .gitignore              <- List of files/folders ignored by git
-├── environment.yml         <- anaconda environment
+├── .gitignore                             <- List of files/folders ignored by git
+├── environment.yml                        <- anaconda environment
 └── README.md
 ```
 
@@ -230,6 +236,7 @@ h_s = Interpreter(model).get_heatmap(x_s, y_s, yhat_s, "grad", 'standard', 'abs'
 
 ### Citation   
 ```
+TBU
 @article{YourName,
   title={Your Title},
   author={Your team},
