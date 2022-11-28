@@ -169,11 +169,11 @@ We offer three options of loggers.
 ## 6. test model
 Likewise, You can check the options for test code. 
  ```bash
-python project/test_insertion.py -h
-python project/test_roar.py -h
-python project/test_rps.py -h
-python project/test_taps_saps.py -h
-python project/test_upper_bound.py -h
+python project/test_main.py --test_method aopc -h
+python project/test_main.py --test_method adv -h
+python project/test_main.py --test_method adv_aopc -h
+python project/test_main.py --test_method rps -h
+python project/test_main.py --test_method upper_bound -h
 ```
 
 For those above test codes, you should specify the `--exp_id` argument. You can check the exp-id in your web project page and it seems like `EXP1-1` for Neptune and `1skdq34` for WandB. Above runs will append the additional logs in to your projects.
