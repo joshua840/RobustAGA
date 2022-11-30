@@ -33,7 +33,7 @@ We highly recommend you to use our conda environment.
 git clone https://github.com/joshua840/RobustAttributionGradAlignment.git
 
 # install project   
-cd RobustAttributionGradAlignment
+cd RobustAGA
 conda env create -f environment.yml 
 conda activate agpu_env
  ```   
