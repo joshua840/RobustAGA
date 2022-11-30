@@ -15,7 +15,7 @@
 
 ## 📌&nbsp;&nbsp;Introduction
 
-> Effective usage of this repository requires learning of a couple of technologies: [PyTorch](https://pytorch.org), [PyTorch Lightning](https://www.pytorchlightning.ai). Knowledge of some experiment logging framework like [Weights&Biases](https://wandb.com), [Neptune](https://neptune.ai) is also recommended.
+> It is required to have prior knowledge of [PyTorch](https://pytorch.org) and [PyTorch Lightning](https://www.pytorchlightning.ai). Also, we recommend you to use at least one of the logging framework [Weights&Biases](https://wandb.com) or [Neptune](https://neptune.ai).
 
 
 ---
