@@ -66,10 +66,6 @@ Our directory structure looks like this:
 │   │
 │   ├── main.py                            <- run train & test
 │   └── test_main.py                       <- run advanced test codes
-│   ├── test_insertion.py                  <- run insertion test
-│   ├── test_rps.py                        <- run Random Perturbation similarity test
-│   ├── test_upper_bouond.py               <- run upper bound test
-│   └── test_taps_saps.py                  <- run adversarial attack test
 │ 
 ├── scripts                                <- Shell scripts
 │
