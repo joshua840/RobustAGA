@@ -21,8 +21,10 @@
 ---
  
 ## 1. Description
-This repository is an official implementation for the paper Towards More Robust Interpretation via Local Gradient Alignment (pdf)
-This repository offers training with CE loss, Hessian regularizer, and l2+cosd regularizer on CIFAR10 and ImageNet100 dataset. `LeNet` and `ResNet18` models are available in this code.
+This repository is an official implementation for [Towards More Robust Interpretation via Local Gradient Alignment](https://arxiv.org/abs/2211.15900). 
+- Supported training losses: CE loss, Hessian regularizer, and l2+cosd regularizer 
+- Supported dataset: CIFAR10 and ImageNet100
+- Supported model: `LeNet` and `ResNet18`
 
 ## 2. How to install
 We highly recommend you to use our conda environment.
