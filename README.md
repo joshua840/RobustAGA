@@ -234,11 +234,9 @@ h_s = Interpreter(model).get_heatmap(x_s, y_s, yhat_s, "grad", 'standard', 'abs'
 
 ### Citation   
 ```
-TBU
-@article{YourName,
-  title={Your Title},
-  author={Your team},
-  journal={Location},
-  year={Year}
+@inproceedings{Joo2022TowardsMR,
+  title={Towards More Robust Interpretation via Local Gradient Alignment},
+  author={Sunghwan Joo and Seokhyeon Jeong and Juyeon Heo and Adrian Weller and Taesup Moon},
+  year={2022}
 }
 ```   
