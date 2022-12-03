@@ -234,9 +234,10 @@ h_s = Interpreter(model).get_heatmap(x_s, y_s, yhat_s, "grad", 'standard', 'abs'
 
 ### Citation   
 ```
-@inproceedings{Joo2022TowardsMR,
+@article{joo2022towards,
   title={Towards More Robust Interpretation via Local Gradient Alignment},
-  author={Sunghwan Joo and Seokhyeon Jeong and Juyeon Heo and Adrian Weller and Taesup Moon},
+  author={Joo, Sunghwan and Jeong, Seokhyeon and Heo, Juyeon and Weller, Adrian and Moon, Taesup},
+  journal={arXiv preprint arXiv:2211.15900},
   year={2022}
 }
 ```   
