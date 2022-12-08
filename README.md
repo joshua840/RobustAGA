@@ -15,7 +15,7 @@
 
 ## 📌&nbsp;&nbsp;Introduction
 
-> It is required to have prior knowledge of [PyTorch](https://pytorch.org) and [PyTorch Lightning](https://www.pytorchlightning.ai). Also, we recommend you to use at least one of the logging framework [Weights&Biases](https://wandb.com) or [Neptune](https://neptune.ai).
+> To use this repository, it is necessary to know [PyTorch](https://pytorch.org) and [PyTorch Lightning](https://www.pytorchlightning.ai). Also, we recommend you to use one of the logging framework that offered by `Pytorch Lightning`, for example, [Weights&Biases](https://wandb.com) or [Neptune](https://neptune.ai).
 
 
 ---
@@ -75,9 +75,9 @@ Our directory structure looks like this:
 ```
 
 <br>
- 
+
 ## 4. Train model
-You can check the arguments list by using -h
+You can check the arguments list by typing -h on CLI.
 ### 4.1 Arguments for CE-loss trainer
 
  ```bash
@@ -126,7 +126,9 @@ Data arguments:
 ```
 
 ### 4.2 Arguments for trainer with regularizer
-Setting --regularizer option will print out some additional arguments
+In our code, the `trainer module` is selected in [here](https://github.com/joshua840/RobustAGA/blob/fcf5a5dff2704fb0f5b3d9fcacee15f8388dbb7f/project/main.py#L30).
+For each `Lightning module class`, we defined `add_model_specific_args` function, which requires additional arguments that used in that class.
+By typing --regularizer option in CLI, you can also see these additional argument list.
  ```
 python project/main.py --regularizer l2_cosd -h
 
@@ -144,9 +146,8 @@ Hessian arguments:
 ```
 
 ### 4.3 Hidden arguments
-pytorch_lightning offers useful arguments for training. For example, we used `--max_epochs` and `--default_root_dir` in our experiments. We recommend the user to refer to the following link to check the argument lists.
+The `Pytorch Lightning` offers useful argument list for training. For example, we used `--max_epochs` and `--default_root_dir` in our experiments. We strongly recommend you to refer to the following [link](https://pytorch-lightning.readthedocs.io/en/latest/api/pytorch_lightning.trainer.trainer.Trainer.html?highlight=trainer) to check the argument list.
 
-(https://pytorch-lightning.readthedocs.io/en/latest/api/pytorch_lightning.trainer.trainer.Trainer.html?highlight=trainer)
 
 ## 5. Loggers
 We offer three options of loggers.
@@ -154,10 +155,10 @@ We offer three options of loggers.
    - Log & model checkpoints are saved in `--default_root_dir`
    - Logging test code with Tensorboard is not available.
 - Weight & bias (https://wandb.ai/site)
-   - Generate a new project on the WandB website. 
+   - Create a new project on the WandB website. 
    - Specify the project argument `--project` 
 - Neptune AI (https://neptune.ai/)
-   - Generate a new project on the neptune website.
+   - Create a new project on the neptune website.
    - export NEPTUNE_API_TOKEN="YOUR API TOKEN"
    - export NEPTUNE_ID="YOUR ID"
    - Set `--default_root_dir` as `output/YOUR_PROJECT_NAME`
@@ -240,4 +241,5 @@ h_s = Interpreter(model).get_heatmap(x_s, y_s, yhat_s, "grad", 'standard', 'abs'
   journal={arXiv preprint arXiv:2211.15900},
   year={2022}
 }
+The citation of AAAI version is TBU.
 ```   
